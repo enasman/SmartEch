@@ -42,10 +42,8 @@ namespace SmartEch.ViewModels
                 IsBusy = false;
             }
         }
-
-        public ObservableCollection<BluetoothDevice> SavedDevices;
-
-        public ObservableCollection<BluetoothDevice> AvailableDevices;
+      
+        public ObservableCollection<BluetoothDevice> AvailableDevices { get; }
 
         public Command LoadDevicesCommand { get; }       
     }
